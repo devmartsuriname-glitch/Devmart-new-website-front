@@ -113,7 +113,7 @@ export default function Index() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="bg-gray-800 border-gray-700 hover:border-yellow-400 transition-colors">
+            <Card className="bg-gray-800 border-gray-700 hover:border-yellow-400 transition-colors cursor-pointer" onClick={() => window.location.href = '/services/web-development'}>
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-yellow-400 rounded-lg mb-6 flex items-center justify-center">
                   <svg className="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
