@@ -27,6 +27,7 @@ export default function Index() {
             <div className="text-2xl font-bold">Vortex</div>
             <div className="hidden md:flex items-center space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-yellow-400 transition-colors">Home</button>
+              <a href="/about" className="hover:text-yellow-400 transition-colors">About Us</a>
               <button onClick={() => scrollToSection('services')} className="hover:text-yellow-400 transition-colors">Services</button>
               <button onClick={() => scrollToSection('portfolio')} className="hover:text-yellow-400 transition-colors">Portfolio</button>
               <button onClick={() => scrollToSection('contact')} className="hover:text-yellow-400 transition-colors">Contact</button>
