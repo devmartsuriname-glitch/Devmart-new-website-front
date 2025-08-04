@@ -37,8 +37,9 @@ export default function About() {
               <div className="flex flex-col space-y-4 mt-4">
                 <a href="/" className="text-left hover:text-yellow-400 transition-colors">Home</a>
                 <a href="/about" className="text-left text-yellow-400">About Us</a>
-                <a href="/#services" className="text-left hover:text-yellow-400 transition-colors">Services</a>
-                <a href="/#portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="/services" className="text-left hover:text-yellow-400 transition-colors">Services</a>
+                <a href="/portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="/blog" className="text-left hover:text-yellow-400 transition-colors">Blog</a>
                 <a href="/#contact" className="text-left hover:text-yellow-400 transition-colors">Contact</a>
                 <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
               </div>
