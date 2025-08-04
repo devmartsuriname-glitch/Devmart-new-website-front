@@ -80,7 +80,6 @@ const tags = ['Agency', 'Business', 'Marketing', 'Branding', 'Creative', 'Digita
 
 export default function BlogDetails() {
   const { blogId } = useParams<{ blogId: string }>();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [commentForm, setCommentForm] = useState({
     name: '',
