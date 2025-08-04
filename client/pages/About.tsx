@@ -1,10 +1,50 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export default function About() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="text-2xl font-bold">Vortex</div>
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="/" className="hover:text-yellow-400 transition-colors">Home</a>
+              <a href="/about" className="text-yellow-400">About Us</a>
+              <a href="/#services" className="hover:text-yellow-400 transition-colors">Services</a>
+              <a href="/#portfolio" className="hover:text-yellow-400 transition-colors">Portfolio</a>
+              <a href="/#contact" className="hover:text-yellow-400 transition-colors">Contact</a>
+              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">Get Started</Button>
+            </div>
+            <button
+              className="md:hidden text-white"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
+              <div className="flex flex-col space-y-4 mt-4">
+                <a href="/" className="text-left hover:text-yellow-400 transition-colors">Home</a>
+                <a href="/about" className="text-left text-yellow-400">About Us</a>
+                <a href="/#services" className="text-left hover:text-yellow-400 transition-colors">Services</a>
+                <a href="/#portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="/#contact" className="text-left hover:text-yellow-400 transition-colors">Contact</a>
+                <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto text-center">
