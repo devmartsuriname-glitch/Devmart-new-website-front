@@ -96,7 +96,6 @@ const faqs = [
 
 export default function ServiceDetails() {
   const { serviceId } = useParams<{ serviceId: string }>();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const service = serviceId ? services[serviceId as keyof typeof services] : null;
