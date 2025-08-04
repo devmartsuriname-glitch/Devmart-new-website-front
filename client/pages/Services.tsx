@@ -121,7 +121,8 @@ export default function Services() {
                 <a href="/" className="text-left hover:text-yellow-400 transition-colors">Home</a>
                 <a href="/about" className="text-left hover:text-yellow-400 transition-colors">About Us</a>
                 <a href="/services" className="text-left text-yellow-400">Services</a>
-                <a href="/#portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="/portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="/blog" className="text-left hover:text-yellow-400 transition-colors">Blog</a>
                 <a href="/#contact" className="text-left hover:text-yellow-400 transition-colors">Contact</a>
                 <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
               </div>
