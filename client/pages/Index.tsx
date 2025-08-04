@@ -26,14 +26,33 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold">Vortex</div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="hover:text-yellow-400 transition-colors">Home</a>
-              <a href="#about" className="hover:text-yellow-400 transition-colors">About</a>
-              <a href="#services" className="hover:text-yellow-400 transition-colors">Services</a>
-              <a href="#portfolio" className="hover:text-yellow-400 transition-colors">Portfolio</a>
-              <a href="#contact" className="hover:text-yellow-400 transition-colors">Contact</a>
+              <button onClick={() => scrollToSection('home')} className="hover:text-yellow-400 transition-colors">Home</button>
+              <button onClick={() => scrollToSection('services')} className="hover:text-yellow-400 transition-colors">Services</button>
+              <button onClick={() => scrollToSection('portfolio')} className="hover:text-yellow-400 transition-colors">Portfolio</button>
+              <button onClick={() => scrollToSection('contact')} className="hover:text-yellow-400 transition-colors">Contact</button>
               <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">Get Started</Button>
             </div>
+            <button
+              className="md:hidden text-white"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
+              <div className="flex flex-col space-y-4 mt-4">
+                <button onClick={() => scrollToSection('home')} className="text-left hover:text-yellow-400 transition-colors">Home</button>
+                <button onClick={() => scrollToSection('services')} className="text-left hover:text-yellow-400 transition-colors">Services</button>
+                <button onClick={() => scrollToSection('portfolio')} className="text-left hover:text-yellow-400 transition-colors">Portfolio</button>
+                <button onClick={() => scrollToSection('contact')} className="text-left hover:text-yellow-400 transition-colors">Contact</button>
+                <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
