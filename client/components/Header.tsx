@@ -35,7 +35,7 @@ export default function Header({ currentPage = '' }: HeaderProps) {
             <a href="/portfolio" className={`hover:text-yellow-400 transition-colors ${isActive('portfolio') ? 'text-yellow-400' : ''}`}>Portfolio</a>
             <a href="/blog" className={`hover:text-yellow-400 transition-colors ${isActive('blog') ? 'text-yellow-400' : ''}`}>Blog</a>
             <a href="/contact" className={`hover:text-yellow-400 transition-colors ${isActive('contact') ? 'text-yellow-400' : ''}`}>Contact</a>
-            <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">Get Started</Button>
+            <a href="/contact" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">Get Started</a>
           </div>
           <button 
             className="md:hidden text-white"
