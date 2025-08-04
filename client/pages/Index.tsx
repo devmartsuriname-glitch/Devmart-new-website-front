@@ -47,6 +47,7 @@ export default function Index() {
             <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
               <div className="flex flex-col space-y-4 mt-4">
                 <button onClick={() => scrollToSection('home')} className="text-left hover:text-yellow-400 transition-colors">Home</button>
+                <a href="/about" className="text-left hover:text-yellow-400 transition-colors">About Us</a>
                 <button onClick={() => scrollToSection('services')} className="text-left hover:text-yellow-400 transition-colors">Services</button>
                 <button onClick={() => scrollToSection('portfolio')} className="text-left hover:text-yellow-400 transition-colors">Portfolio</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left hover:text-yellow-400 transition-colors">Contact</button>
