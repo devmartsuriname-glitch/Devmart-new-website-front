@@ -49,7 +49,7 @@ export default function Index() {
                 <button onClick={() => scrollToSection('home')} className="text-left hover:text-yellow-400 transition-colors">Home</button>
                 <a href="/about" className="text-left hover:text-yellow-400 transition-colors">About Us</a>
                 <a href="/services" className="text-left hover:text-yellow-400 transition-colors">Services</a>
-                <button onClick={() => scrollToSection('portfolio')} className="text-left hover:text-yellow-400 transition-colors">Portfolio</button>
+                <a href="/portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
                 <button onClick={() => scrollToSection('contact')} className="text-left hover:text-yellow-400 transition-colors">Contact</button>
                 <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
               </div>
