@@ -8,6 +8,15 @@ import { Textarea } from "@/components/ui/textarea";
 export default function Index() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
