@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const services = {
   'digital-marketing': {
