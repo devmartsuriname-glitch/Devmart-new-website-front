@@ -230,7 +230,7 @@ export default function Index() {
             </Button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative group cursor-pointer">
+            <div className="relative group cursor-pointer" onClick={() => window.location.href = '/portfolio/e-commerce-platform'}>
               <div className="w-full h-80 bg-gray-700 rounded-lg flex items-center justify-center overflow-hidden">
                 <span className="text-4xl font-bold text-gray-500">630 x 500</span>
               </div>
