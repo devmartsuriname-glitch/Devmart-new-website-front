@@ -28,7 +28,7 @@ export default function Index() {
             <div className="hidden md:flex items-center space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-yellow-400 transition-colors">Home</button>
               <a href="/about" className="hover:text-yellow-400 transition-colors">About Us</a>
-              <a href="/services" className="hover:text-yellow-400 transition-colors">Services</a>
+              <button onClick={() => scrollToSection('services')} className="hover:text-yellow-400 transition-colors">Services</button>
               <button onClick={() => scrollToSection('portfolio')} className="hover:text-yellow-400 transition-colors">Portfolio</button>
               <button onClick={() => scrollToSection('contact')} className="hover:text-yellow-400 transition-colors">Contact</button>
               <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">Get Started</Button>
@@ -48,7 +48,7 @@ export default function Index() {
               <div className="flex flex-col space-y-4 mt-4">
                 <button onClick={() => scrollToSection('home')} className="text-left hover:text-yellow-400 transition-colors">Home</button>
                 <a href="/about" className="text-left hover:text-yellow-400 transition-colors">About Us</a>
-                <a href="/services" className="text-left hover:text-yellow-400 transition-colors">Services</a>
+                <button onClick={() => scrollToSection('services')} className="text-left hover:text-yellow-400 transition-colors">Services</button>
                 <button onClick={() => scrollToSection('portfolio')} className="text-left hover:text-yellow-400 transition-colors">Portfolio</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left hover:text-yellow-400 transition-colors">Contact</button>
                 <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
