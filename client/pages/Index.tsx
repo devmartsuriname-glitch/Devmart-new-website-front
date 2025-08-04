@@ -130,7 +130,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-800 border-gray-700 hover:border-yellow-400 transition-colors">
+            <Card className="bg-gray-800 border-gray-700 hover:border-yellow-400 transition-colors cursor-pointer" onClick={() => window.location.href = '/services/ui-ux-design'}>
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-yellow-400 rounded-lg mb-6 flex items-center justify-center">
                   <svg className="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
