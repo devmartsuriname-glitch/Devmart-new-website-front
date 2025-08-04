@@ -51,6 +51,7 @@ export default function Index() {
                 <a href="/about" className="text-left hover:text-yellow-400 transition-colors">About Us</a>
                 <a href="/services" className="text-left hover:text-yellow-400 transition-colors">Services</a>
                 <a href="/portfolio" className="text-left hover:text-yellow-400 transition-colors">Portfolio</a>
+                <a href="/blog" className="text-left hover:text-yellow-400 transition-colors">Blog</a>
                 <button onClick={() => scrollToSection('contact')} className="text-left hover:text-yellow-400 transition-colors">Contact</button>
                 <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-fit">Get Started</Button>
               </div>
