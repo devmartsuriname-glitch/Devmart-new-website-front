@@ -14,6 +14,7 @@ import Portfolio from "./pages/Portfolio";
 import PortfolioDetails from "./pages/PortfolioDetails";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
