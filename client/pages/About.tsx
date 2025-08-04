@@ -247,6 +247,9 @@ export default function About() {
           </Button>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
